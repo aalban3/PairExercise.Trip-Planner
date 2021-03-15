@@ -1,10 +1,11 @@
 /* eslint-disable quotes */
 import mapboxgl from "mapbox-gl";
-import addMarker from './marker';
+import addMarker from "./marker";
 // import dotenv from "dotenv";
 // dotenv.config({ silent: process.env.NODE_ENV === 'production' });
 // require('dotenv').config();
-mapboxgl.accessToken = 'pk.eyJ1IjoiYWFsYmFuIiwiYSI6ImNrbWFyaXVyZDE1Zzcyb3FmOTV6Y2MwZmQifQ.Ff79O-RvD7G-Hh3FcSN5Lw';
+mapboxgl.accessToken =
+  "pk.eyJ1IjoiYWFsYmFuIiwiYSI6ImNrbWFyaXVyZDE1Zzcyb3FmOTV6Y2MwZmQifQ.Ff79O-RvD7G-Hh3FcSN5Lw";
 
 const map = new mapboxgl.Map({
   container: "map",
@@ -14,5 +15,5 @@ const map = new mapboxgl.Map({
 });
 const fullStack = [-74.009151, 40.705086];
 
-const marker = addMarker('restaurant', fullStack);
+const marker = addMarker("activity", fullStack);
 marker.addTo(map);
